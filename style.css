@@ -1,0 +1,55 @@
+html, body{
+    margin:  0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+/* .red-border{
+    border: solid 1px red;
+} */
+
+.todo-container{
+    margin: 4px;
+    border: solid 2px black;
+    border-radius: 16px;
+    width: max-content;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr,3fr,1fr;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-template-areas: ". title ."
+                        "tag . date"
+                        "button button button"
+    
+}
+
+.title-container{
+    grid-area: title;
+    margin: 4px;
+}
+
+.tag-container{
+    grid-area: tag;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-container{
+    grid-area: date;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.done-button{
+    grid-area: button;
+    border: solid 2px black;
+    background-color: greenyellow;
+    font-weight: bold;
+    color: black;
+    border-radius: 16px;
+    margin: 4px;  
+}
