@@ -38,7 +38,7 @@ for (let i = 0; i < toDoList.length; i++) {
     todoListContainer.appendChild(div);
 
     const todoContainer = div.querySelector('.todo-container')
-    // todoContainer.style.backgroundColor = todo.priority.color;
+    todoContainer.style.backgroundColor = todo.priority.color;
 
     if (todo.deadLineDate) {
         // const dateContainer = div.getElementsByClassName('date-container')[0];
